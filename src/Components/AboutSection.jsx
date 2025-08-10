@@ -13,7 +13,7 @@ const AboutSection = () => {
             <p>
               With over 1 years of expricence in web development, I spcialize in
               creation responsive accessible and performant web application
-              useing modern technologies
+              useing modern with technologies
             </p>
             <p>
               I'm passionate about creating elegant solution to complex
