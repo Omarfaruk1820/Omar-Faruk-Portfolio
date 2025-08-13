@@ -7,15 +7,17 @@ const skills = [
   { name: "JavaScript", level: 90, category: "Frontend" },
   { name: "React", level: 90, category: "Frontend" },
   { name: "Tailwind CSS", level: 90, category: "Frontend" },
-  { name: "TypeScript", level: 85, category: "Frontend" },
-  
-  { name: "Next.js", level: 80, category: "Frontend" },
+  { name: "RESTful APIs", level: 90, category: "Frontend" },
+  { name: "Hooks and State management", level: 85, category: "Frontend" },
+  { name: "React.js |Firebase", level: 80, category: "Frontend" },
+   { name: "Responsiveness", level: 90, category: "Frontend" },
+   { name: "React Axios", level: 85, category: "Frontend" },
+   { name: "TranStack Query", level: 80, category: "Frontend" },
   // Backend
-  { name: "Node.js", level: 80, category: "Backend" },
+  { name: "Node.js", level: 70, category: "Backend" },
   { name: "Express.js", level: 75, category: "Backend" },
   { name: "MongoDB", level: 70, category: "Backend" },
-  { name: "PostgreSQL", level: 65, category: "Backend" },
-  { name: "GraphQL", level: 60, category: "Backend" },
+  { name: "JSON Web Token", level: 60, category: "Backend" },
   // Tools
   { name: "Git/GitHub", level: 90, category: "Tools" },
   { name: "Docker", level: 70, category: "Tools" },
@@ -24,7 +26,7 @@ const skills = [
 ];
 const categories=["All","Frontend","Backend","Tools"]
 const SkillsSection = () => {
-    const [activeCategory,setActiveCategory]=useState("all")
+    const [activeCategory,setActiveCategory]=useState("All")
     const fillterSkills=skills.filter((skill)=>activeCategory==="All"||skill.category===activeCategory)
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
@@ -43,7 +45,7 @@ const SkillsSection = () => {
     ))
 }
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {fillterSkills.map((skill, key) => (
             <div
               key={key}
@@ -52,10 +54,10 @@ const SkillsSection = () => {
               <div className="text-left mb-4">
                 <h1 className="text-semibold text-lg">{skill.name}</h1>
               </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full">
+              <div className="w-full bg-secondary/50 h-2 overflow-hidden rounded-full">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
+                  style={{ width:skill.level + "%" }}
                 ></div>
               </div>
               <div className='text-right mt-1'>

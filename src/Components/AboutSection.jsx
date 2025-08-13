@@ -30,8 +30,9 @@ const AboutSection = () => {
               <a
                 href={resumeURL}
               target="_blank" rel="noopener noreferrer"
+             
               aria-label="Open resume in a new tab"
-                className=" px-6 py-2 rounded-full border-primary text-primary hover:bg-primary/10 transition-colors duration-300 "
+                className=" px-6 py-2 cosmic-button text-white rounded-full border-primary  hover:bg-primary/10 transition-colors duration-300 "
               >
                 Download CV
               </a>
