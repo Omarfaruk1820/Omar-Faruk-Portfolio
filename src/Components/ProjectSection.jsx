@@ -25,7 +25,7 @@ const projects = [
     description: "A beautiful landing page app using React and Tailwind",
     image: "https://i.ibb.co.com/v4YqzVn/6eb112b5-9301-4e19-b740-54c231ef628a.png",
     tags: ["React", "TailwindCSS", "Axios"],
-    demoUrl: "https://musical-sorbet-e6a054.netlify.app/",
+    demoUrl: "https://sprightly-swan-f5e695.netlify.app/",
     githubUrl: "https://github.com/Omarfaruk1820/A-Online-Restaurant-Management-Software",
   },
   {
